@@ -31,9 +31,7 @@ site.posts.sort('date').reverse().forEach(function(post){
             <span><%= post.date.format('MM-DD') %></span>
             <i class="fa fa-angle-double-right" aria-hidden="true"></i>
             <a href="<%- config.root %><%- post.path %>">
-                        <span>
-                            <%- post.title || "Untitled" %>
-                        </span>
+                <%- post.title || "Untitled" %>
             </a>
             <!-- <p class="post-meta">{{ post.date | date:"%Y-%m-%d" }}</p> -->
         </li>

@@ -1,6 +1,6 @@
 /*varibles*/
 .archives-container .one-tag-list .listing-seperator {
-  font-size: 18px;
+  font-size: 20px;
   color: #999999;
 }
 .archives-container .one-tag-list ul {
@@ -16,6 +16,7 @@
   color: #999999;
   margin-right: 15px;
   min-width: 45px;
+  font-size: 14px;
 }
 .archives-container .one-tag-list ul li a {
   text-decoration: none;
