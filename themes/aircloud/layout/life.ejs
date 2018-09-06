@@ -25,7 +25,7 @@ site.posts.sort('date').reverse().forEach(function(post){
         <time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date:"%Y-%m-%d" }}</time>
         <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a>
         </li> -->
-        <% if (post.series){%>
+        <% if (post.series == 'life'){%>
             <li>
                 <span><%= post.date.format('MM-DD') %></span>
                 <i class="fa fa-angle-double-right" aria-hidden="true"></i>

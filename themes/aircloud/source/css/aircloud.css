@@ -1194,3 +1194,9 @@ pre .javascript .function {
 .gitment-comment p {
   text-indent: 0;
 }
+#about-me .title{
+  margin-left: 10px;
+  min-width: 60px;
+  text-align: right;
+  display: inline-block;
+}
