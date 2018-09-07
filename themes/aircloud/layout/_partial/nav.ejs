@@ -4,6 +4,9 @@
         <div class="name">
             <div class="myname"><%= config.author %></div>
             <div class="detail">会拍照的程序媛</div>
+            <!-- <div class="avatar">
+                <img src="../../source/css/me.jpg">
+            </div> -->
         </div>
     </div>
     <div class="contents" id="nav-content">
@@ -26,26 +29,26 @@
                     <span>生活感悟</span>
                 </a>
             </li>
-            <li <% if(is_current('tags')){ %> <%- "class=active" %> <% } %>>
+            <!-- <li <% if(is_current('tags')){ %> <%- "class=active" %> <% } %>>
                 <a href="<%= url_for(config.tag_dir) %>">
                     <i class="iconfont icon-biaoqian1"></i>
                     <span>标签</span>
                 </a>
-            </li>
+            </li> -->
             <li <% if(is_current('about')){ %> <%- "class=active" %> <% } %>>
                 <a href="<%= config.root %><%- 'about/' %>">
                     <i class="iconfont icon-guanyu2"></i>
                     <span>我的生活</span>
                 </a>
             </li>
-            <%if(config.search && config.search.path){%>
+            <!-- <%if(config.search && config.search.path){%>
             <li>
                 <a id="search">
                     <i class="iconfont icon-sousuo1"></i>
                     <span><%= __('nav.search') %></span>
                 </a>
             </li>
-            <% } %>
+            <% } %> -->
         </ul>
     </div>
     <%
