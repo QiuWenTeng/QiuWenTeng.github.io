@@ -2,6 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2018/09/06/skill1/</loc>
+    
+    <lastmod>2018-09-15T03:21:51.228Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/09/06/life2/</loc>
+    
+    <lastmod>2018-09-15T02:58:12.195Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/09/06/life1/</loc>
+    
+    <lastmod>2018-09-15T02:57:26.115Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2018/09/15/life3/</loc>
+    
+    <lastmod>2018-09-15T02:32:02.637Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2018/09/06/photo1/</loc>
     
     <lastmod>2018-09-06T15:06:33.673Z</lastmod>
@@ -16,30 +44,9 @@
   </url>
   
   <url>
-    <loc>http://yoursite.com/2018/09/06/skill1/</loc>
-    
-    <lastmod>2018-09-06T14:34:47.551Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://yoursite.com/life/index.html</loc>
     
     <lastmod>2018-09-06T14:34:47.551Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/09/06/life1/</loc>
-    
-    <lastmod>2018-09-06T14:34:47.550Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2018/09/06/life2/</loc>
-    
-    <lastmod>2018-09-06T14:34:47.550Z</lastmod>
     
   </url>
   
