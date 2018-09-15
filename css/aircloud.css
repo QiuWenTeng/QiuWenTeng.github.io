@@ -117,7 +117,7 @@ body {
   text-align: center;
 }
 .nav .avatar-name .name .myname{
-  font-size: 20px;
+  font-size: 24px;
 }
 .nav .avatar-name .name .detail{
   margin-top: 10px;
@@ -583,7 +583,6 @@ body {
 .post-container .post-title {
   width: 100%;
   text-align: center;
-  line-height: 30px;
   margin-top: 0;
   margin-bottom: 15px;
   color: #101010;
@@ -597,7 +596,7 @@ body {
 }
 .post-container .post-meta span,
 .post-container .post-meta a {
-  font-weight: 300;
+  font-weight: 400;
   color: #999999;
   font-size: 13px;
   text-decoration: none;
@@ -662,35 +661,15 @@ body {
 .post-content pre code {
   line-height: 175%;
 }
-.post-content h1 {
+.post-content h1,
+.post-content h2, 
+.post-content h3,
+.post-content h4,
+.post-content h5{
   color: #3d3d3d;
   margin-top: 20px;
   margin-bottom: 20px;
-}
-.post-content h2 {
-  color: #3d3d3d;
-  margin-top: 50px;
-  margin-bottom: 20px;
-}
-.post-content h3 {
-  color: #3d3d3d;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.post-content h4 {
-  color: #3d3d3d;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.post-content h5 {
-  color: #3d3d3d;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.post-content h6 {
-  color: #3d3d3d;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  line-height: 1.2;
 }
 #comment-container {
   text-indent: 0;
