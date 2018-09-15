@@ -1,6 +1,6 @@
 /*varibles*/
 * {
-  font-family: "italic", Helvetica, Arial, "Heiti SC", "Microsoft YaHei";
+  font-family: -apple-system,SF UI Text,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
 }
 body,
 html {
@@ -350,9 +350,9 @@ body {
   cursor: pointer;
   margin-top: 0;
   margin-bottom: 5px;
-  color: #101010;
+  color: #333;
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 400;
   transition: color 0.4s;
 }
 .post-preview .post-info a h3:hover {
@@ -370,6 +370,7 @@ body {
 }
 .post-preview-container {
   min-height: 420px;
+  padding-left: 5%;
 }
 .pager {
   width: 100%;
@@ -412,6 +413,7 @@ body {
 @media screen and (max-width: 680px) {
   .post-preview-container {
     min-height: 0 !important;
+    padding-left: 0;
   }
   .post-preview {
     width: 100%;
@@ -573,20 +575,20 @@ body {
   }
 }
 .post-container {
-  width: 100%;
   height: max-content;
   display: flex;
   flex-direction: column;
+  padding: 0 8%;
 }
 .post-container .post-title {
   width: 100%;
   text-align: center;
-  line-height: 24px;
+  line-height: 30px;
   margin-top: 0;
-  margin-bottom: 5px;
+  margin-bottom: 15px;
   color: #101010;
-  font-size: 20px;
-  font-weight: 300;
+  font-size: 26px;
+  font-weight: 500;
 }
 .post-container .post-meta {
   text-align: center;
@@ -607,9 +609,8 @@ body {
 .post-content {
   line-height: 20px;
   font-size: 15px;
-  text-indent: 2em;
-  color: #333333;
-  font-weight: 300;
+  color: #2f2f2f;
+  font-weight: 400;
 }
 .post-content blockquote {
   border-top: 1px solid #cccccc;
@@ -630,13 +631,12 @@ body {
 }
 .post-content p {
   color: #4a4a4a;
-  font-size: 14px;
+  margin-bottom: 25px;
+  font-size: 16px;
   line-height: 30px;
-  text-indent: 2em;
-  letter-spacing: 1px;
 }
 .post-content p img {
-  width: 80%;
+  width: 100%;
 }
 .post-content ul,
 .post-content ol {
@@ -660,7 +660,6 @@ body {
   padding: 10px;
 }
 .post-content pre code {
-  color: white;
   line-height: 175%;
 }
 .post-content h1 {
@@ -726,7 +725,7 @@ body {
   flex-direction: row;
 }
 .index-container .index-left {
-  width: 240px;
+  width: 200px;
 }
 .index-container .index-middle {
   max-width: 780px;

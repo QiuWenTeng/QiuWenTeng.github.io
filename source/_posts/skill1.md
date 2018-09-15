@@ -23,27 +23,27 @@ series: skill
     </html>
 
 在谷歌浏览器下，我们可以看到不同手机的适配情况：  
-![iPhone5下](/img/bVbgcA4?w=716&h=480 "iPhone5下")
+![iPhone5下](https://image-static.segmentfault.com/782/948/782948651-5b87ef1eeb2f9_articlex "iPhone5下")
 
-![图片描述](/img/bVbgcBf?w=786&h=362 "图片描述")
+![图片描述](https://image-static.segmentfault.com/569/577/56957775-5b87ef722c38d_articlex "图片描述")
 
-![图片描述](/img/bVbgcBh?w=860&h=332 "图片描述")
+![图片描述](https://image-static.segmentfault.com/339/717/3397179390-5b87ef9eb2ecd_articlex "图片描述")
 
 可以看出，不管是i5/i6/i6plus下，div的宽度都为980px，这个980是什么值，为什么它好像和移动设备无关？
 
 其实这个980所表示的就是**布局视口**。  
 **布局视口layout viewport** ：就是移动设备上用来装载我们的网页的那一块区域。浏览器厂商为了让用户在小屏幕下网页也能够显示地很好，所以把布局视口宽度设置地很大，一般在 768px ~ 1024px之间。不同的设备有不同的宽度。最常见的宽度是980。下图是不同设备下布局视口的大小。
 
-![300958470402077.png](/img/bV9WZA?w=653&h=89 "300958470402077.png")
+![300958470402077.png](https://image-static.segmentfault.com/352/576/3525763610-5aec0b00b2950_articlex)
 
 布局视口有980像素，可是我们的屏幕很小，按理说应该会有滚动条才是，可实际上并没有。这就需要归功于另一个视口：**视觉视口**。
 
 **视觉视口visual viewport**：屏幕上显示的页面的一部分。听起来很玄乎，可是你认真看下面这张图，你就能明白视觉视口(visual viewport)和布局视口(layout viewport)的关系了：  
-![图片描述](/img/bVbggWD?w=1026&h=800 "图片描述")  
-![图片描述](/img/bVbggWJ?w=1040&h=790 "图片描述")
+![图片描述](https://image-static.segmentfault.com/426/324/4263242685-5b89f18dbf5e3_articlex "图片描述")  
+![图片描述](https://image-static.segmentfault.com/382/903/3829031657-5b89f1ca2fab9_articlex "图片描述")
 
 此时，因为我们的视觉视口 = 布局视口，所以没有出现滚动条。虽说是没有滚动条，但是pc端能友好显示的页面，在移动端上就显示的很怪异。字体很小，很难看清。比如亲爱的百度：  
-![图片描述](/img/bVbgcCP?w=788&h=908 "图片描述")
+![图片描述](https://image-static.segmentfault.com/242/129/2421291971-5b87f2518ba3d_articlex "图片描述")
 
 如果想让字体大小可读，又该怎么办？在此之前，我们还需要了解另一个视口，**理想视口**。  
 **理想视口ideal viewport**：它提供了设备上理想网页的大小。这个值可以在[不同设备的理想视口](http://viewportsizes.com/)查到。常用的有：i5是320，i8是375，plus是414。
@@ -73,9 +73,9 @@ series: skill
     </html>
 
 得到了如下的效果：  
-![图片描述](/img/bVbgg0A?w=708&h=446 "图片描述")  
-![图片描述](/img/bVbgg0M?w=806&h=418 "图片描述")  
-![图片描述](/img/bVbgg0Z?w=796&h=396 "图片描述")
+![图片描述](https://image-static.segmentfault.com/188/518/1885183793-5b89f968a9681_articlex "图片描述")  
+![图片描述](https://image-static.segmentfault.com/383/160/3831604168-5b89f98ec110f_articlex "图片描述")  
+![图片描述](https://image-static.segmentfault.com/132/892/1328921631-5b89f9b64d8c7_articlex "图片描述")
 
 字体在三大尺寸下，显示都算是友好，但是奇怪的是div的宽度不再是980，而是和设备的宽度有关。这一切，都得归功于我们刚刚加的`width=device-width`了。
 
@@ -95,15 +95,15 @@ series: skill
 
     initial-scale = 0.5 「 div宽度640，页面无滚动条 」
 
-![图片描述](/img/bVbgg2K?w=694&h=358 "图片描述")
+![图片描述](https://image-static.segmentfault.com/204/065/2040654142-5b89fcd750c4e_articlex "图片描述")
 
     initial-scale = 1 「 div宽度320，页面无滚动条 」
 
-![图片描述](/img/bVbgg0A?w=708&h=446 "图片描述")
+![图片描述](https://image-static.segmentfault.com/188/518/1885183793-5b89f968a9681_articlex "图片描述")
 
     initial-scale = 1 「 div宽度320，页面有滚动条 」
 
-![图片描述](/img/bVbgg3P?w=702&h=630 "图片描述")
+![图片描述](https://image-static.segmentfault.com/135/127/1351270005-5b89fe0d3ccba_articlex "图片描述")
 
 现在我们好好来捋捋：
 
