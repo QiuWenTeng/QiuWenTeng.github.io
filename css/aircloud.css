@@ -869,19 +869,22 @@ body {
   color: #4990E2;
 }
 @media screen and (max-width: 680px) {
+  .post-container {
+    padding: 0;
+  }
   .archives-container .one-tag-list .listing-seperator {
     font-size: 18px;
     color: #999999;
   }
   .archives-container .one-tag-list ul {
     list-style: none;
-    padding-left: 1em;
+    padding-left: 0;
   }
   .archives-container .one-tag-list ul li {
     display: flex;
     align-items: center;
     flex-direction: row;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
   }
   .archives-container .one-tag-list ul li span {
     color: #999999;
@@ -893,10 +896,10 @@ body {
     font-size: 12px;
   }
   .archives-container .one-tag-list ul li a {
-    font-size: 14px;
-    font-weight: 300;
+    font-size: 16px;
+    font-weight: 400;
     text-decoration: none;
-    line-height: 20px;
+    line-height: 24px;
     color: #4a4a4a;
   }
   .archives-container .one-tag-list ul li a span {
